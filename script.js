@@ -26,6 +26,7 @@ function restart(){
     document.querySelector("input").disabled = false;
     document.querySelector("input").value = "";
     result.innerText = "";
+    fname=0;
 
 }
 
