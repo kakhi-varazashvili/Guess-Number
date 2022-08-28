@@ -22,13 +22,10 @@ function x(){
     fname++
     console.log("input value: ",inp.value,"random: ",random, "Try: ",fname)
 }
-
 function restart(){
     document.querySelector("input").disabled = false;
     document.querySelector("input").value = "";
     result.innerHTML = "Start a new game :)";
-
     random = parseInt(Math.random()*20);
     fname=0;
-
 }
