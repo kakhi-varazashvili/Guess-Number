@@ -1,0 +1,31 @@
+.correct {
+  font-size: 40px;
+  color: green;
+  font-weight: 900;  
+}
+.halfcorrect {
+    font-size: 40px;
+    color: blue;
+    font-weight: 900;  
+  }
+.incorrect {
+    font-size: 40px;
+    color: red;
+    font-weight: 900;  
+  }
+  .container {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  input, button{
+    outline-style: none;
+    width: 100%;
+    height: 50px;
+  }

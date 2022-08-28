@@ -6,14 +6,16 @@
 
 var inp = document.querySelector("input")
 var fname = 0;
-var random = parseInt(Math.random()*100);
+var random = parseInt(Math.random()*20);
 var result = document.querySelector(".win");
 result.classList.add("correct");
 function x(){
        
     if(inp.value==random){
         document.querySelector("input").disabled = true;
-        result.innerHTML = "BRAVISSIMO, you guessed it after "+fname+" attempts";
+        // fname+=1
+        result.innerHTML = "Bravo, you guessed it after "+(fname+1)+" attempts";
+        // console.log("YES");  
     }
     else {
         console.log("Not found")
@@ -25,13 +27,9 @@ function x(){
 function restart(){
     document.querySelector("input").disabled = false;
     document.querySelector("input").value = "";
-    result.innerText = "";
+    result.innerHTML = "Start a new game :)";
+
+    random = parseInt(Math.random()*20);
     fname=0;
 
 }
-
-    
-
-
-
-

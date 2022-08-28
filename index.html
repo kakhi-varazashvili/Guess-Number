@@ -4,15 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Guess Number</title>
+    <title>Document</title>
 </head>
 <body>
    
-
-    <input type="text" placeholder="Guess the random number" >
-    <button onclick="x()">Click</button>
-    <button onclick="restart()" id="rest" >Restart</button>
-    <h1 class="win"></h1>
+    <div class="container">
+        <form action="#">
+        <input type="text" placeholder="Guess a random number between 0 and 20" >
+        <button onclick="x()"class="btnstart">Click</button>
+        <button onclick="restart()" class="btnrestart" id="rest" >Restart</button>
+        </form>
+    <h1 class="win" style="display: block; margin: 0 auto;"></h1>
+    
+    </div>
+ 
 
    <script src="script.js"></script>
 </body>
