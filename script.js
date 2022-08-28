@@ -10,7 +10,6 @@ var random = parseInt(Math.random()*20);
 var result = document.querySelector(".win");
 result.classList.add("correct");
 function x(){
-    result.innerHTML = "";
        
     if(inp.value==random){
         document.querySelector("input").disabled = true;
