@@ -10,15 +10,14 @@ var random = parseInt(Math.random()*20);
 var result = document.querySelector(".win");
 result.classList.add("correct");
 function x(){
+    result.innerHTML = "";
        
     if(inp.value==random){
         document.querySelector("input").disabled = true;
-        // fname+=1
         result.innerHTML = "Bravo, you guessed it after "+(fname+1)+" attempts";
-        // console.log("YES");  
     }
     else {
-        console.log("Not found")
+        result.innerHTML = "Try again :(" ;
     }
     fname++
     console.log("input value: ",inp.value,"random: ",random, "Try: ",fname)
